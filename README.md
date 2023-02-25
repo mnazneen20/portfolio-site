@@ -1,1 +1,5 @@
-This is my portfolio site built with react. (on building phase)...
+This is my portfolio site.
+
+[Live website](https://dmnazneen-portfolio.netlify.app/)
+
+Built with · `React` · `Tailwind CSS` · `Framer Moton` ·
