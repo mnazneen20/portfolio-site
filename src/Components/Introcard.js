@@ -24,7 +24,7 @@ export default function Introcard() {
               <h1 className='text-white font-extrabold text-4xl sm:text-5xl leading-[2.5rem] myfont-fraunces'>Dewan Masuma <br /> Nazneen</h1>
             </section>
         </div>
-        <p className='font-thin text-justify leading-[1.2rem] pt-8 pr-5'>Hi, I'm a web developer from Bangladesh, specializing in frontend technologies. I started learning about the web during the lockdown as a hobby to know how things work in the internet. Now I enjoy building user friendly and designs like aesthetically pleasing websites and want to persue my career in this path.</p>
+        <p className='font-thin text-justify leading-[1.2rem] pt-8 pr-5'>Hi, I'm a web developer from Bangladesh, specializing in frontend development. I started learning about the web during the lockdown as a hobby to know how things work in the internet. With time now I have started enjoying to build user friendly websites that are aesthetically pleasing. I have just completed my BSc and now I am looking forward to persue my career in software development.</p>
 
         <ul className='flex flex-wrap gap-1.5 py-4'>
           <motion.li className='p-3 rounded-full hover:text-zinc-900 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500'
