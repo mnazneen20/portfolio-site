@@ -11,7 +11,7 @@ export default function Educationsection() {
             <motion.div key={m.time}
                 initial = {{opacity:0, y:50}}
                 whileInView ={{opacity:1, y:0}}
-                transition = {{duration:0.7}}
+                transition = {{duration:0.5}}
                 viewport ={{once: true}}
             >
               <div className='flex items-baseline w-full'>
@@ -36,7 +36,7 @@ export default function Educationsection() {
 
 const data = [
   {
-    time: 'January, 2023',
+    time: '2019 - January, 2023',
     degree: 'BSc in Information & Communication Engineering',
     from: 'Bangladesh University of Professionals.',
     grade: '3.79 / 4'
