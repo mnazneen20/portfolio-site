@@ -6,12 +6,14 @@ import Skillsection from "./Components/Skillsection";
 
 function App() {
   return (
-    <div className="w-screen bg-zinc-900 text-white pl-4 sm:pl-[11rem]">
-    <Introcard />
-    <Projectssection />
-    <Skillsection />
-    <Educationsection />
-    <Footer />
+    <div>
+      <main className="w-screen bg-zinc-900 text-white pl-4 sm:pl-[11rem]">
+      <Introcard />
+      <Projectssection />
+      <Skillsection />
+      <Educationsection />
+      </main>
+      <Footer />
     </div>
   );
 }
