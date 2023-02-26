@@ -30,7 +30,7 @@ export default function Projectssection() {
                 >
                     <section className='bg-zinc-900 p-6 rounded-lg w-72 sm:w-96 h-full'>
                         <h1 className='text-xl font-bold mt-4'>Shopping App</h1>
-                        <p className='font-light text-sm my-3'>This is a <span className='underline underline-offset-2 decoration-fuchsia-500 text-white'>e-commerce website</span>. It displays product catalouge in the homepage fetched from external API, product details of each item in separate page and has cart functionality.</p>
+                        <p className='font-light text-sm my-3'>This is a <span className='underline underline-offset-2 decoration-fuchsia-500 text-white'>e-commerce website</span>. It displays product catalogue in the homepage fetched from external API, product details of each item in separate page and has cart functionality.</p>
 
                         <p className='font-mono font-bold text-sm text-white tracking-wide'>React · Pure CSS · Fakestore API · fetch </p>
 
