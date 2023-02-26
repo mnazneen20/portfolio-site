@@ -19,23 +19,23 @@ export default function Projectssection() {
     <section className='pb-28'>
         <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>Projects</h2>
 
-        <motion.div ref={carousel} className='mycarousel text-slate-200 cursor-grab w-full overflow-x-hidden' whileTap={{ cursor: "grabbing" }}>
+        <motion.div ref={carousel} className='mycarousel text-slate-700 dark:text-slate-200 cursor-grab w-full overflow-x-hidden' whileTap={{ cursor: "grabbing" }}>
             <motion.div drag='x' dragConstraints={{ right: 0, left: -width }} className="mycarousel-inner flex gap-6">
 
                 {projects.map((m) => (
-                    <motion.section className='item bg-gradient-to-br from-violet-500 to-fuchsia-500 p-[2px] rounded-lg'
+                    <motion.section key={m._id} className='item bg-gradient-to-br from-violet-500 to-fuchsia-500 p-1 sm:p-[2px] rounded-lg'
                         initial = {{opacity: 0, x: -100}}
                         whileInView = {{opacity: 1, x:0}}
                         transition = {{duration: durationtime}}
                         viewport = {{once: true}}
                     >
-                        <p className='hidden'>{durationtime+=0.3}</p>
-                        <section className='bg-zinc-900 p-6 rounded-lg w-72 sm:w-96 h-full'>
+                        <p className='hidden'>{durationtime+=0.2}</p>
+                        <section className='bg-violet-50 dark:bg-zinc-900 p-6 rounded-lg w-72 sm:w-96 h-full transition-all delay-200 ease-in-out'>
                             <h1 className='text-xl font-bold mt-4'>{m.title}</h1>
-                            <p className='font-light text-sm my-3'>This is a <span className='underline underline-offset-2 decoration-fuchsia-500 text-white'>{m.type}</span>. {m.description}</p>
+                            <p className='font-light text-sm my-3'>This is a <span className='underline underline-offset-2 decoration-fuchsia-500 text-black font-normal dark:text-white'>{m.type}</span>. {m.description}</p>
 
-                            <p className='font-mono font-bold text-sm text-white tracking-wide'>
-                                · {m.tech.map(n => <span>{n} · </span>)}
+                            <p className='font-mono font-bold text-sm text-black dark:text-white tracking-wide'>
+                                · {m.tech.map(n => <span key={n}>{n} · </span>)}
                             </p>
 
                             <div className='flex gap-8 my-6'>

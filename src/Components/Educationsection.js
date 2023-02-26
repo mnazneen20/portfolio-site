@@ -6,12 +6,12 @@ export default function Educationsection() {
     <section className='pb-24 max-w-xl break-words'>
         <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>Education</h2>
 
-        <div className='flex flex-col text-slate-200'>
+        <div className='flex flex-col text-slate-800 dark:text-slate-200'>
           {data.map((m) => (
             <motion.div key={m.time}
                 initial = {{opacity:0, y:50}}
                 whileInView ={{opacity:1, y:0}}
-                transition = {{duration:0.5}}
+                transition = {{duration:0.4}}
                 viewport ={{once: true}}
             >
               <div className='flex items-baseline w-full'>
@@ -20,10 +20,10 @@ export default function Educationsection() {
               </div>
 
               <div className='flex items-stretch'>
-                <div className="circle w-3"><section className='ml-1 w-[2px] h-full bg-slate-200'></section></div>
+                <div className="circle w-3"><section className='ml-1 w-[2px] h-full bg-slate-800 dark:bg-slate-200'></section></div>
                 <div className="title ml-8 mt-1">{m.degree}
-                  <p className='text-xs font-extralight'> - from {m.from}</p>
-                  <p className='font-mono mt-2 mb-4'>CGPA - <b className='text-white'>{m.grade}</b></p>
+                  <p className='text-xs font-light'> - from {m.from}</p>
+                  <p className='font-mono mt-2 mb-4'>CGPA - <b className='text-black dark:text-white'>{m.grade}</b></p>
                 </div>
               </div>
             </motion.div>

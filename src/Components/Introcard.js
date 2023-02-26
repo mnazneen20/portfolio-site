@@ -12,7 +12,7 @@ export default function Introcard() {
   let animateduration = 0.3;
   const position = '<web developer />';
   return (
-    <div className='text-slate-300 pt-40 pb-20 max-w-xl'>
+    <div className='text-slate-800 dark:text-slate-300 pt-10 pb-20 max-w-xl'>
         <div className='flex flex-col items-start gap-4 lg sm:flex-row  sm:items-end sm:gap-8'>
             {/* profile photo  */}
               <motion.img src={myphoto} alt="dewan masuma nazneen" className='w-28 h-28 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 outline outline-offset-4 outline-2'
@@ -31,7 +31,7 @@ export default function Introcard() {
                 >
                   {position}
                 </motion.p>
-                <motion.h1 className='text-white font-extrabold text-4xl sm:text-5xl leading-[2.5rem] myfont-fraunces'
+                <motion.h1 className='text-slate-900 dark:text-white font-extrabold text-4xl sm:text-5xl leading-[2.5rem] myfont-fraunces'
                   initial = {{opacity:0, x:50}}
                   whileInView = {{opacity:1, x:0}}
                   transition = {{delay:0.3, type: "spring", duration:0.6}}
@@ -40,7 +40,7 @@ export default function Introcard() {
               </section>
         </div>
         {/* introduction text here  */}
-        <motion.p className='font-thin text-justify leading-[1.2rem] pt-8 pr-5'
+        <motion.p className='font-extralight text-justify leading-[1.2rem] pt-8 pr-5'
           initial = {{opacity:0, x:50}}
           whileInView = {{opacity:1, x:0}}
           transition = {{delay:0.3, type: "spring", duration:0.6}}
