@@ -56,7 +56,7 @@ export default function Projectssection() {
                         <p className='font-mono font-bold text-sm text-white tracking-wide'>React · Tailwind CSS · Framer Motion</p>
 
                         <div className='flex gap-8 my-6'>
-                            <a href="/" target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{ fontSize: 35 }} /></a>
+                            <a href="https://dmnazneen-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{ fontSize: 35 }} /></a>
                             <a href="https://github.com/mnazneen20/portfolio-site" target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 35 }} /></a>
                         </div>
                     </section>
