@@ -72,7 +72,7 @@ export default function Introcard() {
 const socials = [
   {
     icon: <React.Fragment><MailOutlineRoundedIcon sx={{ fontSize: 32 }} /></React.Fragment>,
-    linkto: 'mailto:masumanzneen2019@gmail.com'
+    linkto: 'mailto:masumanazneen2019@gmail.com'
   },
   {
     icon: <React.Fragment><GitHubIcon sx={{ fontSize: 30 }} /></React.Fragment>,
