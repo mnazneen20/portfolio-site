@@ -1,8 +1,8 @@
 This is my portfolio site.
 
-[Live website](https://dmnazneen-portfolio.netlify.app/)
+[Live website](https://portfolio-site-rosy-mu.vercel.app/)
 
-Built with · `React` · `Tailwind CSS` · `Framer Moton` ·
+Built with · `React` · `Tailwind CSS` · `Framer Motion` ·
 
 ![](./homepage.png)
 

@@ -4,32 +4,32 @@ import { motion } from 'framer-motion'
 export default function Educationsection() {
   return (
     <section className='pb-24 max-w-xl break-words'>
-        <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>Education</h2>
+      <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>Education</h2>
 
-        <div className='flex flex-col text-slate-800 dark:text-slate-200'>
-          {data.map((m) => (
-            <motion.div key={m.time}
-                initial = {{opacity:0, y:50}}
-                whileInView ={{opacity:1, y:0}}
-                transition = {{duration:0.4}}
-                viewport ={{once: true}}
-            >
-              <div className='flex items-baseline w-full'>
-                <div className="circle"><section className='w-3 h-3 rounded-full bg-fuchsia-500'></section></div>
-                <div className="title ml-8 mt-1 text-sm"><b>{m.time}</b></div>
-              </div>
+      <div className='flex flex-col text-slate-800 dark:text-slate-200'>
+        {data.map((m, index) => (
+          <motion.div key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <div className='flex items-baseline w-full'>
+              <div className="circle"><section className='w-3 h-3 rounded-full bg-fuchsia-500'></section></div>
+              <div className="title ml-8 mt-1 text-sm"><b>{m.time}</b></div>
+            </div>
 
-              <div className='flex items-stretch'>
-                <div className="circle w-3"><section className='ml-1 w-[2px] h-full bg-slate-800 dark:bg-slate-200'></section></div>
-                <div className="title ml-8 mt-1">{m.degree}
-                  <p className='text-xs font-light'> - from {m.from}</p>
-                  <p className='font-mono mt-2 mb-4'>CGPA - <b className='text-black dark:text-white'>{m.grade}</b></p>
-                </div>
+            <div className='flex items-stretch'>
+              <div className="circle w-3"><section className='ml-1 w-[2px] h-full bg-slate-800 dark:bg-slate-200'></section></div>
+              <div className="title ml-8 mt-1">{m.degree}
+                <p className='text-xs font-light'> - from {m.from}</p>
+                <p className='font-mono mt-1 mb-8'>CGPA - <b className='text-black dark:text-white'>{m.grade}</b></p>
               </div>
-            </motion.div>
-          ))}
-            
-        </div>
+            </div>
+          </motion.div>
+        ))}
+
+      </div>
     </section>
   )
 }
