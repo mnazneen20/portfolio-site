@@ -5,8 +5,8 @@ import myphoto from './myphoto.png'
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import CodeIcon from '@mui/icons-material/Code';
 
 export default function Introcard() {
   let animateduration = 0.3;
@@ -68,7 +68,7 @@ export default function Introcard() {
               viewport={{ once: true }}
             >
               <p className='hidden'>{animateduration += 0.7}</p>
-              <a href={m.linkto} target="_blank" rel="noopener noreferrer">{m.icon}</a>
+              <a title={m.title} href={m.linkto} target="_blank" rel="noopener noreferrer">{m.icon}</a>
             </motion.li>
           ))
         }
@@ -82,22 +82,27 @@ export default function Introcard() {
 const socials = [
   {
     icon: <React.Fragment><MailOutlineRoundedIcon sx={{ fontSize: 32 }} /></React.Fragment>,
-    linkto: 'mailto:masumanazneen2019@gmail.com'
+    linkto: 'mailto:masumanazneen2019@gmail.com',
+    title: 'Email'
   },
   {
     icon: <React.Fragment><GitHubIcon sx={{ fontSize: 30 }} /></React.Fragment>,
-    linkto: 'https://github.com/mnazneen20'
+    linkto: 'https://github.com/mnazneen20',
+    title: 'Github'
   },
   {
     icon: <React.Fragment><LinkedInIcon sx={{ fontSize: 30 }} /></React.Fragment>,
-    linkto: 'https://www.linkedin.com/in/dewan-masuma-nazneen16/'
+    linkto: 'https://www.linkedin.com/in/dewan-masuma-nazneen16/',
+    title: 'LinkedIn'
   },
   {
-    icon: <React.Fragment><TwitterIcon sx={{ fontSize: 30 }} /></React.Fragment>,
-    linkto: 'https://twitter.com/mnazneen20'
+    icon: <React.Fragment><CodeIcon sx={{ fontSize: 30 }} /></React.Fragment>,
+    linkto: 'https://leetcode.com/mnazneen20/',
+    title: 'LeetCode'
   },
   {
     icon: <React.Fragment><FacebookIcon sx={{ fontSize: 30 }} /></React.Fragment>,
-    linkto: 'https://www.facebook.com/masuma.nazneen.3'
+    linkto: 'https://www.facebook.com/masuma.nazneen.3',
+    title: 'Facebook'
   }
 ]

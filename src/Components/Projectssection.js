@@ -39,7 +39,7 @@ export default function Projectssection() {
                                 </p>
 
                                 <div className='flex gap-8 my-6'>
-                                    <a href={m.livelink} target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{ fontSize: 35 }} /></a>
+                                    {m.livelink && <a href={m.livelink} target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{ fontSize: 35 }} /></a>}
                                     <a href={m.githublink} target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 35 }} /></a>
                                 </div>
                             </section>
@@ -63,6 +63,14 @@ const projects = [
     },
     {
         _id: 2,
+        title: 'USER API',
+        type: 'Node.js server',
+        description: "The API allows you to perform CRUD operations on user data, including user creation, retrieval, update, and deletion.",
+        tech: ['Node.js', 'fs module', 'http module', 'crypto module'],
+        githublink: 'https://github.com/mnazneen20/user-api',
+    },
+    {
+        _id: 3,
         title: 'Messenger',
         type: 'Fullstack (MERN) app',
         description: "There are groups where user can have realtime communication with multiple users of a group. Implemented authentication, authorization and realtime messaging using socket connection.",
@@ -71,7 +79,7 @@ const projects = [
         githublink: 'https://github.com/mnazneen20/grp-messenger',
     },
     {
-        _id: 3,
+        _id: 4,
         title: 'Shopping App',
         type: 'e-commerce website',
         description: 'It displays product catalogue in the homepage fetched from external API, product details of each item in separate page and has cart functionality.',
@@ -80,7 +88,7 @@ const projects = [
         githublink: 'https://github.com/mnazneen20/shopping-app'
     },
     {
-        _id: 4,
+        _id: 5,
         title: 'meeTube',
         type: 'video streaming website',
         description: 'It displays list of trending videos on the homepage fetched from API, video search video streaming is available, list of related videos are displayed.',
@@ -88,13 +96,4 @@ const projects = [
         livelink: 'https://wondrous-llama-6f13c6.netlify.app/',
         githublink: 'https://github.com/mnazneen20/mee-tube'
     },
-    {
-        _id: 5,
-        title: 'REST country show',
-        type: 'multipage react website',
-        description: 'It displays list of all countries in the homepage, detail information of each country is in separate page, light and dark modes are available.',
-        tech: ['React', 'React-router', 'Pure CSS', 'fetch', 'REST countires API'],
-        livelink: 'https://kaleidoscopic-blancmange-f4cf8d.netlify.app/',
-        githublink: 'https://github.com/mnazneen20/REST-countries-show'
-    }
 ]
