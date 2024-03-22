@@ -5,7 +5,6 @@ import myphoto from './myphoto.png'
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import CodeIcon from '@mui/icons-material/Code';
 
 export default function Introcard() {
@@ -99,10 +98,5 @@ const socials = [
     icon: <React.Fragment><CodeIcon sx={{ fontSize: 30 }} /></React.Fragment>,
     linkto: 'https://leetcode.com/mnazneen20/',
     title: 'LeetCode'
-  },
-  {
-    icon: <React.Fragment><FacebookIcon sx={{ fontSize: 30 }} /></React.Fragment>,
-    linkto: 'https://www.facebook.com/masuma.nazneen.3',
-    title: 'Facebook'
   }
 ]
